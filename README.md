@@ -27,3 +27,7 @@ URL tersebut, yang ada pada subscriber program, juga ada pada publisher program,
 - Screen of spikes on RebbitMQ
 ![image](https://github.com/brofathan/tutorial-publisher/assets/45114836/206a4e47-d54b-4af6-ae4d-b178f5910f70)
 (Terjadinya spike karena publisher program mengirimkan data berkali-kali ke message queue, jadi grafik menunjukkan bahwa adanya lonjakan message queue.)
+
+- Screen of RabbitMQ with slow subscriber
+![image](https://github.com/brofathan/tutorial-publisher/assets/45114836/12431f18-2020-4394-8793-a1aebe0ec765)
+(Terdapat 15 message queue karena saya menjalankan publisher sepertinya sebanyak 3 kali, publisher mengirimkan 5 data tiap dijalankan.)
