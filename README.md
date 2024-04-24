@@ -23,3 +23,7 @@ URL tersebut, yang ada pada subscriber program, juga ada pada publisher program,
 - Console screen of cargo run
 ![image](https://github.com/brofathan/tutorial-publisher/assets/45114836/268e78d5-3b58-4d33-b0ce-c0e5e1727989)
 (Publisher program mengirimkan data ke message queue, mengirim dan memprosesnya, Lalu ia mengembalikan console log seperti ini.)
+
+- Screen of spikes on RebbitMQ
+![image](https://github.com/brofathan/tutorial-publisher/assets/45114836/12431f18-2020-4394-8793-a1aebe0ec765)
+(Terjadinya spike karena publisher program mengirimkan data berkali-kali ke message queue, jadi grafik menunjukkan bahwa adanya lonjakan message queue.)
