@@ -1,6 +1,7 @@
 use borsh::{BorshDeserialize, BorshSerialize};
 use crosstown_bus::{CrosstownBus, HandleError, MessageHandler};
 #[derive(Debug, Clone, BorshDeserialize, BorshSerialize)]
+
 pub struct UserCreatedEventMessage {
     pub user_id: String,
     pub user_name: String,
@@ -10,6 +11,10 @@ impl MessageHandler<UserCreatedEventMessage> for UserCreatedHandler {
     fn handle(&self, message: Box<UserCreatedEventMessage>) -> Result<(), HandleError> {
         println!("Message received on handler 1: {:?}", message);
         Ok(())
+    }
+
+    fn get_handler_action(&self) -> String {
+        todo!()
     }
 }
 fn main() {
